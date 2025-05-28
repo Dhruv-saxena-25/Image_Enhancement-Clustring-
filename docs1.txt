@@ -1,0 +1,75 @@
+1. Clarity of Problem (Max: 2)
+Defined Problem:
+This project addresses the challenge of segmenting and enhancing meaningful regions in images through unsupervised learning. It is relevant in fields like medical imaging, remote sensing, and photo editing.
+
+✅ Score Justification: The problem is clearly defined and applicable to real-world image processing.
+
+2. Technical Approach and Innovation (Max: 6)
+Approach Overview:
+
+Utilizes Fuzzy C-Means clustering for image segmentation.
+
+Converts high-dimensional color data into clusters with soft memberships.
+
+Employs advanced cluster quality metrics: Davies-Bouldin Index, WCSS, and Silhouette Score.
+
+Implements a dedicated enhancement function to adjust brightness and contrast for a selected cluster.
+
+Innovation Aspects:
+
+Combines fuzzy logic with image enhancement.
+
+Modular code suitable for extension (e.g., spatial features, grayscale processing).
+
+Provides interpretable and interactive cluster feedback.
+
+✅ Score Justification: The methods are well-explained, technically sound, and show innovation in combining clustering and enhancement.
+
+3. Results and Evaluation (Max: 4)
+What Was Done:
+
+The system outputs individual clusters, combined segmented image, and enhancement results.
+
+Quantitative evaluation via:
+
+DBI – for compactness/separation.
+
+Silhouette Score – for cluster appropriateness.
+
+WCSS – for internal variance.
+
+Presentation:
+
+Cluster centers (colors) and segmented images are clearly visualized using matplotlib.
+
+✅ Score Justification: Results are effectively presented using appropriate visual and numerical metrics.
+
+4. Critical Reflection (Max: 4)
+Discussed Limitations & Improvements:
+
+Potential limitations include:
+
+RGB-only input (no spatial features considered).
+
+Manual cluster count input (no auto-selection).
+
+Improvement paths:
+
+Include spatial coordinates in clustering.
+
+Automate optimal cluster detection.
+
+Enable GUI or web-based interactive cluster editing.
+
+✅ Score Justification: Clear awareness of scope and room for future improvements is demonstrated.
+
+5. Visual Presentation and Overall Impression (Max: 4)
+Poster/Code Strengths:
+
+Well-structured visual output showing step-by-step image transformation.
+
+Clean comparison of original, clustered, and enhanced outputs.
+
+Modular functions enhance readability and reusability.
+
+✅ Score Justification: Visually organized, easy to follow, and leaves a professional impression.
